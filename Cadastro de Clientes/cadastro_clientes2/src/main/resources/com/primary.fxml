@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TelaController">
+   <children>
+      <Text layoutX="228.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Clientes">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="campoNome" layoutX="110.0" layoutY="128.0" prefHeight="25.0" prefWidth="321.0" />
+      <Text layoutX="51.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+      <TextField fx:id="campoCEP" layoutX="110.0" layoutY="168.0" prefHeight="25.0" prefWidth="181.0" promptText="00000-000" />
+      <Text layoutX="51.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP" />
+      <TextField fx:id="campoRua" layoutX="110.0" layoutY="207.0" prefHeight="25.0" prefWidth="284.0" />
+      <Text layoutX="51.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua" />
+      <TextField fx:id="campoCidade" layoutX="110.0" layoutY="247.0" prefHeight="25.0" prefWidth="247.0" />
+      <Text layoutX="51.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" />
+      <TextField fx:id="campoTelefone" layoutX="110.0" layoutY="292.0" prefHeight="25.0" prefWidth="247.0" />
+      <Text layoutX="51.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" />
+      <TextField fx:id="campoNumero" layoutX="490.0" layoutY="206.0" prefWidth="106.0" />
+      <Text layoutX="431.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número" />
+      <TextField fx:id="campoEstado" layoutX="442.0" layoutY="247.0" />
+      <Text layoutX="391.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado" />
+      <Button fx:id="BuscarCEP" layoutX="340.0" layoutY="168.0" mnemonicParsing="false" onAction="#buscarCEP" text="Buscar" />
+      <Button fx:id="Limpar" layoutX="226.0" layoutY="347.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+      <Button fx:id="Gravar" layoutX="332.0" layoutY="347.0" mnemonicParsing="false" onAction="#gravar" text="Gravar" />
+   </children>
+</AnchorPane>

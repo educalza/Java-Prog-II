@@ -1,0 +1,6 @@
+util\Endereco.class
+util\Cliente.class
+util\Buscador$EnderecoInterno.class
+util\Buscador.class
+util\App.class
+util\TelaController.class
