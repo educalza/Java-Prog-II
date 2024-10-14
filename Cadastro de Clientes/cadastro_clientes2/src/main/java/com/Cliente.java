@@ -48,4 +48,8 @@ public class Cliente {
     public void setTelefone(String estado){
         this.telefone = estado;
     }
+
+    boolean isEmpty() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

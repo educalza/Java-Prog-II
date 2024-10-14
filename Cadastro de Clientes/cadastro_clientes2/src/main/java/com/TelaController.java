@@ -73,6 +73,14 @@ public class TelaController {
 
     @FXML
     private void gravar() {
+        if (campoNome.getText().isEmpty() || campoTelefone.getText().isEmpty() ||
+        campoCEP.getText().isEmpty() || campoRua.getText().isEmpty() ||
+        campoNumero.getText().isEmpty() || campoCidade.getText().isEmpty() ||
+        campoEstado.getText().isEmpty()) {
+        
+        mostrarAlerta(AlertType.ERROR, "Por favor, preencha todos os campos.");
+        return;
+    }
         Cliente cliente = new Cliente(); // Cria um novo objeto Cliente
         cliente.setNome(campoNome.getText());
         cliente.setTelefone(campoTelefone.getText());
@@ -81,5 +89,14 @@ public class TelaController {
         
         mostrarAlerta(AlertType.INFORMATION, "Cadastro gravado.");
         limpar();
+        
+        if (listaClientes.isEmpty()) {
+            System.out.println("Nenhum cliente cadastrado.");
+        } else {
+            System.out.println("Clientes cadastrados:");
+            for (Cliente c : listaClientes) {
+                System.out.println(c.getNome());
+            }
+        }
     }
 }
